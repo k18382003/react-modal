@@ -1,0 +1,15 @@
+@import '../../styles/mixin';
+@import '../../styles/variable';
+
+.my-button {
+  @include paddings(0.8rem, 0);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 10px $movieit-dark-grey;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 0.5s;
+  }
+}
